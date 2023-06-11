@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
@@ -10,16 +11,17 @@ body {
     color: #EFEFEF;
     display: flex;
     justify-content: center;
-    flex: 1;
-    /* border: 2px solid white; */
+    /* flex: 1; */
+    /* border: 2px solid red; */
 }
 .description {
     max-width: 50%;
+    max-height: 50rem;
     /* height: calc(100vh - 2.4rem); */
     /* min-height: calc(100vh - 2.4rem); */
     margin-left: 3.2rem;
     margin-top: 2.4rem;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     float: left;
     display: flex;
     flex-direction: column;
@@ -58,7 +60,11 @@ img {
     display: flex;
     gap: 5rem;
 }
-@media (min-width: 1200px) {
+button {
+    font-size: 1.5rem;
+}
+/* @media (min-width: 1200px) { */
+@media (min-width: 120em) {
     html {
         /* font-size: 37.5%; */
         font-size: 62.5%;
@@ -66,7 +72,9 @@ img {
     }
 }
 /* @media (max-width: 900px) { */
-@media (max-width: 1000px) {
+/* @media (min-width: 751px) and (max-width: 1000px) { */
+/* @media (min-width: 751px) and (max-width: 1000px) { */
+@media (min-width: 75.1em) and (max-width: 100em) {
     html {
         /* font-size: 56.25%; */
         font-size: 44.25%;
@@ -75,7 +83,8 @@ img {
     }
 }
 /* @media (max-width: 600px) { */
-@media (max-width: 750px) {
+/* @media (max-width: 750px) { */
+@media (min-width:41em) and (max-width: 75em) {
     html {
         /* font-size: 56.5%; */
         /* font-size: 45%; */
@@ -84,15 +93,17 @@ img {
     }
    
 }
-@media (max-width: 400px) {
+/* @media (max-width: 400px) { */
+@media (min-width: 1em) and (max-width: 40em) {
     html {
         /* font-size: 56.5%; */
-        font-size: 40%;
+        /* font-size: 40%; */
+        font-size: 15%;
         transition: font-size 1.5s;
     }
-    body  {
+    /* body  {
         flex-direction: column-reverse;
-        /* border: 2px solid red; */
+        border: 2px solid red;
     }
     .description {
         max-width: 100%;
@@ -101,5 +112,5 @@ img {
     img {
         max-width: 100%;
         transition: max-width 1.5s;
-    }
+    } */
 }
